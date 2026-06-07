@@ -1,9 +1,10 @@
 import { drizzle } from "drizzle-orm/node-postgres";
+import * as schema from "./schema.ts";
 import * as relations from "./relations.ts";
 import { env } from "../data/env.ts";
 
 export const db = drizzle({
-  relations,
+  schema: { ...schema, ...relations },
   connection: {
     password: env.DB_PASSWORD,
     user: env.DB_USER,

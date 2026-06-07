@@ -3,5 +3,6 @@ CREATE TABLE "tasks" (
 	"title" text NOT NULL,
 	"description" text,
 	"completed" boolean DEFAULT false NOT NULL,
-	"createdAt" timestamp with time zone DEFAULT now() NOT NULL
+	"createdAt" timestamp with time zone DEFAULT now() NOT NULL,
+	"updatedAt" timestamp with time zone DEFAULT now() NOT NULL
 );

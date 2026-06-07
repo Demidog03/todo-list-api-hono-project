@@ -1,1 +1,0 @@
-ALTER TABLE "tasks" ADD COLUMN "updatedAt" timestamp with time zone DEFAULT now() NOT NULL;

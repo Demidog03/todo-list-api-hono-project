@@ -1,5 +1,6 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
+import { taskRoutes } from './routes/task.routes.ts'
 
 const app = new Hono()
 
@@ -25,6 +26,8 @@ app.post('/test', async (context) => {
     }, 400)
   }
 })
+
+app.route('/tasks', taskRoutes) // ко всем роутам в файле task.routes.ts в начале добавь слово /tasks
 
 serve({
   fetch: app.fetch,

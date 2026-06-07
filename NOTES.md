@@ -91,3 +91,13 @@ todos.show() -> SELECT * FROM todos
 Migration - Миграция
     Первичная миграция - Создаем новые таблицы
     Повторная миграция
+
+
+ROUTES:
+/tasks (GET) => Получить список задач - DONE
+/tasks/:id (GET) => Получить информацию про одну задачу (по ID) - DONE
+/tasks (POST) => Создать задачу - DONE
+/tasks/:id/status (PATCH) => Поменять статус задачи - DONE
+/tasks/:id (DELETE) => Удаление задачи - DONE
+
+context => Request + Response

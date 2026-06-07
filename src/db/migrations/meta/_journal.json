@@ -5,43 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1780416243875,
-      "tag": "0000_naive_northstar",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1780416357270,
-      "tag": "0001_purple_tony_stark",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1780416432101,
-      "tag": "0002_little_harpoon",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1780416489915,
-      "tag": "0003_abnormal_sunspot",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1780421079722,
-      "tag": "0004_smart_dorian_gray",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1780421104877,
-      "tag": "0005_nasty_power_man",
+      "when": 1780813962549,
+      "tag": "0000_mighty_maria_hill",
       "breakpoints": true
     }
   ]
