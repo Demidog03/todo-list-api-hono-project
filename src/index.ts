@@ -1,8 +1,19 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { taskRoutes } from './routes/task.routes.ts'
+import { cors } from 'hono/cors'
 
 const app = new Hono()
+
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+    allowHeaders: ['X-Custom-Header', 'Upgrade-Insecure-Requests', 'Content-Type', 'Accept'],
+    allowMethods: ['POST', 'GET', 'OPTIONS', 'DELETE', 'PATCH'],
+    exposeHeaders: ['Content-Length', 'X-Kuma-Revision'],
+    maxAge: 600,
+    credentials: true,
+  }))
 
 // GET
 app.get('/', (context) => {
